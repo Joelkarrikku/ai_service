@@ -1,0 +1,31 @@
+# Web server for the API
+fastapi
+uvicorn[standard]
+
+# For image and video processing
+opencv-python-headless
+
+# For numerical operations
+numpy
+
+# For the YOLOv8 person detection model
+ultralytics
+
+# High-level library for face recognition and analysis
+deepface
+
+# Specific versions for compatibility
+tensorflow==2.15.0
+tf-keras==2.15.0
+
+# For handling image data
+Pillow
+python-multipart
+
+# --- NEW FOR TRAINING ---
+# Deep learning framework
+torch
+torchvision
+
+# For data handling and splitting
+scikit-learn
