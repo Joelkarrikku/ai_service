@@ -1,4 +1,8 @@
-# File: ai_service/app.py
+# ==============================================================================
+# File: app.py (CLEANED)
+# ==============================================================================
+# Action: Replace the entire content of your app.py file with this code.
+# ------------------------------------------------------------------------------
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import cv2
@@ -9,8 +13,8 @@ from utils.video_processing import process_frame_for_analysis
 
 app = FastAPI(
     title="AI Crowd Monitoring Service",
-    description="An API for real-time crowd and anomaly analysis.",
-    version="2.0.0"
+    description="An API for real-time crowd analysis.",
+    version="1.0.0"
 )
 
 class AnalysisRequest(BaseModel):
@@ -20,7 +24,6 @@ class AnalysisResponse(BaseModel):
     crowd_count: int
     demographics: dict
     detected_faces: list
-    anomaly_status: str # New field
     alerts: list
 
 @app.get("/")
