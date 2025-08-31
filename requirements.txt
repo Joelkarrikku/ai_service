@@ -22,10 +22,7 @@ tf-keras==2.15.0
 Pillow
 python-multipart
 
-# --- NEW FOR TRAINING ---
-# Deep learning framework
+# For custom model training
 torch
 torchvision
-
-# For data handling and splitting
 scikit-learn
